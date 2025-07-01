@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Whispering Pines Retreat | Dhanaulti Homestay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homestay2/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">The Whispering Pines Retreat</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+                <a href="#booking" class="cta-button nav-cta">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header>
+        <div class="hero-content">
+            <h1>Welcome to The Whispering Pines Retreat</h1>
+            <p>A cozy homestay nestled in the peaceful pine-covered hills near Dhanaulti, overlooking the breathtaking Mussoorie valley</p>
+            <a href="#booking" class="cta-button">Check Availability</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <div class="content">
+            <!-- About Section -->
+            <section id="about">
+                <h2 class="section-title">Your Peaceful Mountain Escape</h2>
+                <p>Surrounded by lush greenery, our retreat offers the perfect escape for nature lovers, remote workers, couples, solo travelers, and spiritual seekers. The Whispering Pines is more than just accommodation - it's an experience that rejuvenates your mind, body, and soul.</p>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="homestay2/retreat-exterior.jpg" alt="Retreat exterior" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>A Home Among the Pines</h3>
+                        <p>Our retreat features 4 beautifully designed wooden rooms — two with stunning valley views and two facing the dense forest — all combining rustic charm with modern comfort. Each space has been carefully crafted to harmonize with the natural surroundings while providing all the comforts you need.</p>
+                        <p>Wake up to birdsong, spend your days exploring the forests, and end your evenings by the bonfire under a blanket of stars.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rooms Section -->
+            <section id="rooms">
+                <h2 class="section-title">Our Rooms</h2>
+                <div class="room-grid">
+                    <!-- Valley View Room 1 -->
+                    <div class="room-card">
+                        <img src="homestay2/valley-room-1.jpg" alt="Valley View Room" class="room-image" loading="lazy">
+                        <div class="room-info">
+                            <h3 class="room-title">Valley View Suite</h3>
+                            <p>Wake up to breathtaking views of the Mussoorie valley from your private balcony.</p>
+                            <div class="room-features">
+                                <span class="feature-tag">King Bed</span>
+                                <span class="feature-tag">Balcony</span>
+                                <span class="feature-tag">Forest View</span>
+                                <span class="feature-tag">Heater</span>
+                            </div>
+                            <div class="room-price">₹3,500/night</div>
+                            <a href="#booking" class="cta-button small-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Add more room cards as needed -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">The Whispering Pines Retreat</div>
+                    <p>Handcrafted wooden furniture made with tradition and care.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#rooms">Our Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#testimonials">Guest Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span>Near Dhanaulti, Mussoorie Road, Uttarakhand</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>hello@whisperingpinesretreat.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 The Whispering Pines Retreat. All rights reserved. | Crafted with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            // Back to Top button
+            // (Add the button in your HTML if needed)
+        });
+    </script>
+</body>
+</html>
