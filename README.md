@@ -16,17 +16,9 @@ This is a static website project for a boutique homestay, designed to showcase r
 ## 📁 Folder Structure
 ```
 webdeveop/
-│   index.html         # Main landing page
-│   README.md          # Project documentation (this file)
-│
-└───homestay2/
-    │   index.html     # (Alternate/backup HTML, not used for main site)
-    │   styles.css     # Main stylesheet for the site
-    │   *.jpg          # Images and assets referenced in index.html
-
-portfolio/
-    portfolio.html     # (Unrelated to homestay site)
-    rusticroots.html   # (Unrelated to homestay site)
+│   index.html      # Main landing page
+│   styles.css      # Main stylesheet for the site
+│   README.md       # Project documentation (this file)
 ```
 
 ## 🚀 Deployment Instructions
@@ -37,7 +29,7 @@ portfolio/
    ```
 2. **Open `index.html` in your browser**
    - Double-click `index.html` or use a local server (e.g., [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for VS Code).
-3. **Ensure all images and `styles.css` are present in the `homestay2/` folder.**
+3. **Ensure `index.html`, `styles.css`, and `README.md` are present in the `webdeveop/` folder.**
 4. **For GitHub Pages:**
    - Push your code to a GitHub repository.
    - In repo settings, set GitHub Pages source to `/webdeveop` folder.
@@ -45,8 +37,8 @@ portfolio/
 
 ## 🛠️ Customization
 - Edit `index.html` for content changes.
-- Update `homestay2/styles.css` for design tweaks.
-- Add or replace images in `homestay2/` as needed.
+- Update `styles.css` for design tweaks.
+- Add or replace images as needed.
 
 ## 📬 Contact
 For questions or collaboration, email: hello@whisperingpinesretreat.com
